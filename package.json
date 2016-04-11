@@ -1,0 +1,25 @@
+{
+  "name": "mitlogs.com",
+  "version": "3.0.0",
+  "description": "MIT Logarhythms Official Website",
+  "dependencies": {
+    "docpad": "~6.78.4",
+    "docpad-plugin-cleanurls": "~2.8.1",
+    "docpad-plugin-eco": "~2.1.0",
+    "docpad-plugin-ignoreincludes": "~2.1.0",
+    "docpad-plugin-marked": "~2.3.0",
+    "docpad-plugin-partials": "~2.9.2",
+    "docpad-plugin-stylus": "~2.11.0",
+    "jeet": "^6.1.2",
+    "rupture": "^0.6.1"
+  },
+  "main": "node_modules/.bin/docpad-server",
+  "scripts": {
+    "start": "node_modules/.bin/docpad-server",
+    "watch": "node_modules/.bin/docpad run",
+    "build": "node_modules/.bin/docpad generate",
+    "clean": "rm -rf out",
+    "deploy": "",
+    "stage": "rsync -avz --delete ./out/ delta:docker/mitlogs-staging/site"
+  }
+}

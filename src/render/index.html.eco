@@ -1,0 +1,18 @@
+---
+layout: default
+title: "Home"
+---
+
+<%- @partial('splash') %>
+
+<div class='grid'>
+    <% for post in @getCollection('posts').toJSON(): %>
+        <a href='<%= post.url %>'>
+            <div class='grid-card'>
+                <h1><%= post.title %></h1>
+                <h2><%= post.datetime %> | <%= post.venue %></h2>
+                <%- post.contentRenderedWithoutLayouts %>
+            </div>
+        </a>
+    <% end %>
+</div>

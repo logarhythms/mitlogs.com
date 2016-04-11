@@ -1,0 +1,30 @@
+
+header
+    cf()
+    center()
+    height $header-height
+    max-width $header-width
+    padding 0 1rem 0 1rem
+    #logo
+        position relative
+        top 50%
+        transform translateY(-50%)
+        width 8rem
+        float left
+    nav
+        float right
+        position relative
+        top 50%
+        transform translateY(-50%)
+        a
+            font-size 1.1rem
+            font-weight 600
+            display inline
+            color $light
+            text-decoration none
+            padding 0 1rem 0 1rem
+            &:visited
+                color $light
+            &:hover
+                text-decoration none
+                color $accent

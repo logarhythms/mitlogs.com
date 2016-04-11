@@ -1,0 +1,9 @@
+---
+layout: 'default'
+---
+
+<%- @partial('header') %>
+<div class='page-content'>
+    <%- @content %>
+</div>
+<%- @partial('footer') %>

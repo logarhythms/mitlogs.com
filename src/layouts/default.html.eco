@@ -1,0 +1,7 @@
+<!DOCTYPE html>
+<html>
+    <%- @partial('meta') %>
+    <body>
+        <%- @content %>
+    </body>
+</html>
